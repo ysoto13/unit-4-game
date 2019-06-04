@@ -1,7 +1,13 @@
-body{
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Shadows Into Light', cursive;
+body  {
+    background: rgb(156, 185, 209); 
+}
+
+
+.heading {
+  font-size: 50px;
+  font-family: 'Inconsolata', monospace;
+  color: #fdc5ce;
+  font-weight: bold;
 }
 
 .column {
