@@ -1,13 +1,17 @@
-.container {
-    width: 200px;
-    height: 200px;
-
+body{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
-
 
 .column {
     float: left;
-    width: 200px;
-    
+    width: 200px;  
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
