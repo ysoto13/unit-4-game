@@ -1,5 +1,6 @@
 body  {
     background: rgb(156, 185, 209); 
+    margin: auto;
 }
 
 
@@ -21,3 +22,11 @@ body  {
     display: block;
 }
 
+
+.card {
+    margin: auto;
+}
+
+.card-img-top {
+    height: 8rem;
+}
