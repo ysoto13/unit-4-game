@@ -5,7 +5,7 @@ var pearl =0;
 
 
 function random() {
-    Math.floor((Math.random() * 100) + 19)
+    return Math.floor((Math.random() * 100) + 19)
 }
 
 
