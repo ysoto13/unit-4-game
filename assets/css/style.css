@@ -1,1 +1,13 @@
-/* my regular css will go here */
+.container {
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.column {
+    float: left;
+    width: 200px;
+    
+}
+
