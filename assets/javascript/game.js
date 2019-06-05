@@ -35,24 +35,21 @@ citrine = Math.floor(Math.random() * 12) + 1;
 pearl = Math.floor(Math.random() * 12) + 1;
 
 
-//update gem values on the page
-$("#gem1Value")
-
 // player clicks gem & points, between 1-12 value, will be added to their score
 $( "#gem1" ).on( "click", function() {
-    console.log("click on gem1");
+    console.log(amethyst + yourScore);
   });
 
   $( "#gem2" ).on( "click", function() {
-    console.log("click on gem2");
+    console.log(diamond + yourScore);
   });
 
   $( "#gem3" ).on( "click", function() {
-    console.log("click on gem3");
+    console.log(citrine + yourScore);
   });
 
   $( "#gem4" ).on( "click", function() {
-    console.log("click on gem4");
+    console.log(pearl + yourScore);
   });
 
 
