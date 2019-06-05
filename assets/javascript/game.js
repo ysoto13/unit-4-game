@@ -10,3 +10,5 @@ var amethys = Math.floor(Math.random()*11+1)
 var diamond = Math.floor(Math.random()*11+1)
 var citrine = Math.floor(Math.random()*11+1)
 var pearl = Math.floor(Math.random()*11+1)
+
+
