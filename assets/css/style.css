@@ -1,6 +1,6 @@
 body  {
     background: rgb(156, 185, 209); 
-    margin: auto;
+    
 }
 
 
@@ -29,4 +29,14 @@ body  {
 
 .card-img-top {
     height: 8rem;
+    margin: auto;
+}
+
+
+.info {
+    margin: auto;
+}
+
+.rules {
+    margin: auto;
 }
