@@ -13,7 +13,7 @@ var loses = 0;
 
 
 // random number at start of game between 19-120
-var targetNumber = Math.floor(Math.random() * 120) + 19;
+var targetNumber = Math.floor(Math.random() * 101) + 19;
 
 // displays the target number we need to add up to, to win the game
 $("#targetNumber").text(targetNumber);
@@ -29,28 +29,81 @@ $("#losesTotal").text(loses);
 
 
 // this is what will give my gems a number between 1-12
-amethyst = Math.floor(Math.random() * 12) + 1;
-diamond = Math.floor(Math.random() * 12) + 1;
-citrine = Math.floor(Math.random() * 12) + 1;
-pearl = Math.floor(Math.random() * 12) + 1;
+amethyst = Math.floor(Math.random() * 11) + 1;
+diamond = Math.floor(Math.random() * 11) + 1;
+citrine = Math.floor(Math.random() * 11) + 1;
+pearl = Math.floor(Math.random() * 11) + 1;
+
 
 
 // player clicks gem & points, between 1-12 value, will be added to their score
-$( "#gem1" ).on( "click", function() {
+$("#gem1").on("click", function() {
     console.log(amethyst + yourScore);
+    yourScore = yourScore + amethyst;
+    $("#scoreTotal").text(yourScore);
+    if (yourScore == targetNumber){
+      winner();
+    } else if (yourScore > targetNumber){
+      loser();
+    }
   });
 
-  $( "#gem2" ).on( "click", function() {
+  $("#gem2").on("click", function() {
     console.log(diamond + yourScore);
+    yourScore = yourScore + diamond;
+    $("#scoreTotal").text(yourScore);
+    if (yourScore == targetNumber){
+      winner();
+    } else if (yourScore > targetNumber){
+      loser();
+    }
   });
 
-  $( "#gem3" ).on( "click", function() {
+
+
+  $("#gem3").on("click", function() {
     console.log(citrine + yourScore);
+    yourScore = yourScore + citrine;
+    $("#scoreTotal").text(yourScore);
+    if (yourScore == targetNumber){
+      winner();
+    } else if (yourScore > targetNumber){
+      loser();
+    }
   });
 
-  $( "#gem4" ).on( "click", function() {
-    console.log(pearl + yourScore);
+  $("#gem4").on("click", function(){
+    yourScore = yourScore + pearl;
+    $("#scoreTotal").text(yourScore);
+    if (yourScore == targetNumber){
+      winner();
+    } else if (yourScore > targetNumber){
+      loser();
+    }
   });
+
+function winner() {
+  wins++;
+  $("#winsTotal").text(wins);
+  reset();
+};
+
+function loser() {
+  loses++;
+  $("#losesTotal").text(loses);
+  reset();
+};
+
+ function reset(){
+  $("#targetNumber").text(targetNumber);
+  targetNumber = Math.floor(Math.random() * 101) + 19;
+  amethyst = Math.floor(Math.random() * 11) + 1;
+  diamond = Math.floor(Math.random() * 11) + 1;
+  citrine = Math.floor(Math.random() * 11) + 1;
+  pearl = Math.floor(Math.random() * 11) + 1;
+  yourScore =0;
+  $("#scoreTotal").text(yourScore);
+};
 
 
 
@@ -60,7 +113,7 @@ $( "#gem1" ).on( "click", function() {
 
 // game restarts when the player wins or loses
 
-// game restarts with a new random number at the top, gem have new values, & players score will reset
+// players score will reset
 
 // must show how many games the player has won & lost
 
