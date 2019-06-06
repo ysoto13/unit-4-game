@@ -7,13 +7,13 @@ var amethyst = 0;
 var diamond = 0;
 var citrine = 0;
 var pearl = 0;
-var yourScore =0;
+var yourScore = 0;
 var wins = 0;
 var loses = 0;
 
 
 // random number at start of game between 19-120
-var targetNumber = Math.floor(Math.random() * 101) + 19;
+var targetNumber = Math.floor(Math.random() * 101 + 19);
 
 // displays the target number we need to add up to, to win the game
 $("#targetNumber").text(targetNumber);
@@ -29,10 +29,10 @@ $("#losesTotal").text(loses);
 
 
 // this is what will give my gems a number between 1-12
-amethyst = Math.floor(Math.random() * 11) + 1;
-diamond = Math.floor(Math.random() * 11) + 1;
-citrine = Math.floor(Math.random() * 11) + 1;
-pearl = Math.floor(Math.random() * 11) + 1;
+amethyst = Math.floor(Math.random() * 11 + 1);
+diamond = Math.floor(Math.random() * 11 + 1);
+citrine = Math.floor(Math.random() * 11 + 1);
+pearl = Math.floor(Math.random() * 11 + 1);
 
 
 
@@ -96,12 +96,12 @@ function loser() {
 
  function reset(){
   $("#targetNumber").text(targetNumber);
-  targetNumber = Math.floor(Math.random() * 101) + 19;
-  amethyst = Math.floor(Math.random() * 11) + 1;
-  diamond = Math.floor(Math.random() * 11) + 1;
-  citrine = Math.floor(Math.random() * 11) + 1;
-  pearl = Math.floor(Math.random() * 11) + 1;
-  yourScore =0;
+  targetNumber = Math.floor(Math.random() * 101 + 19);
+  amethyst = Math.floor(Math.random() * 11 + 1);
+  diamond = Math.floor(Math.random() * 11 + 1);
+  citrine = Math.floor(Math.random() * 11 + 1);
+  pearl = Math.floor(Math.random() * 11 + 1);
+  yourScore = 0;
   $("#scoreTotal").text(yourScore);
 };
 
