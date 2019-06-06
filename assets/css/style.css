@@ -1,6 +1,5 @@
 body  {
     background: rgb(156, 185, 209); 
-    
 }
 
 
@@ -33,8 +32,8 @@ body  {
 }
 
 
-.info {
-    margin: auto;
+h2 {
+    margin: right;
 }
 
 .rules {
