@@ -82,13 +82,13 @@ $("#gem1").on("click", function() {
     }
   });
 
-function winner() {
+function winner(){
   wins++;
   $("#winsTotal").text(wins);
   reset();
 };
 
-function loser() {
+function loser(){
   loses++;
   $("#losesTotal").text(loses);
   reset();
