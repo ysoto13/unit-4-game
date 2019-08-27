@@ -1,13 +1,16 @@
 body  {
-    background: rgb(156, 185, 209); 
+text-align: center; 
+margin: 100px 450px 0px 450px;
+background: url(../images/purepleYellowLarge.jpg) center no-repeat;
 }
 
 
 .heading {
   font-size: 50px;
   font-family: 'Inconsolata', monospace;
-  color: #fdc5ce;
+  color: rgb(156, 185, 209);
   font-weight: bold;
+  text-align: center;
 }
 
 .column {

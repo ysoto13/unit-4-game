@@ -22,81 +22,87 @@
         rel="stylesheet">
 </head>
 
+
+
 <body>
-    <!-- heading -->
-    <div class="heading">
-        <h1>Welcome to My Crystal Collector Game</h1>
-    </div>
-
-    <br>
-
 
     <!-- Bootstrap Card -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/amethyst_PNG.png" class="card-img-top" alt="amethyst" id="gem1">
-                    
-                </div>
-            </div>
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>Welcome to My Crystal Collector Game</h1>
+        </div>
+        <div class="card-body">
 
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/diamond_PNG.png" class="card-img-top" alt="diamond" id="gem2">
-                    
-                </div>
-            </div>
+            <p class="card-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/images/diamond_PNG.png" class="card-img-top" alt="diamond" id="gem1">
 
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/citrine_PNG.png" class="card-img-top" alt="citrine" id="gem3">
-                </div>
-            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/images/amethyst_PNG.png" class="card-img-top" alt="amethyst" id="gem2">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/images/citrine_PNG.png" class="card-img-top" alt="citrine" id="gem3">
+                            </div>
+                        </div>
 
 
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/pearl_PNG.png" class="card-img-top" alt="pearl" id="gem4">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/images/Sapphire.png" class="card-img-top" alt="sapphire" id="gem4">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </p>
+        </div>
+
+
+        <div class="card-body">
+
+            <h2>Target Number: <span id="targetNumber"></span></h2>
+            <h2>Wins: <span id="winsTotal"></span></h2>
+            <h2>Loses: <span id="losesTotal"></span></h2>
+            <h2>Your Score: <span id="scoreTotal"></span></h2>
+
+        </div>
+
+
+        <div class="card-footer text-muted">
+            <h2>RULES:</h2>
+
+            <br>
+
+            <p>You will be given a random number at the start of the game.</p>
+            <br>
+
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                total score.</p>
+            <br>
+
+            <p>You win the game by matching your toal score to random numbers, you lose the game if your total score
+                goes
+                above the random number.</p>
+            <br>
+
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <br>
+
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
     </div>
 
-    <br>
 
-    <div class="info">
-        <h2>Target Number: <span id="targetNumber"></span></h2>
-        <h2>Wins: <span id="winsTotal"></span></h2>
-        <h2>Loses: <span id="losesTotal"></span></h2>
-        <h2>Your Score: <span id="scoreTotal"></span></h2>
-    </div>
-
-    <hr>
-
-
-    <div class="rules">
-        <h2>RULES:</h2>
-
-        <br>
-
-        <p>You will be given a random number at the start of the game.</p>
-        <br>
-
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            total score.</p>
-        <br>
-
-        <p>You win the game by matching your toal score to random numbers, you lose the game if your total score goes
-            above the random number.</p>
-        <br>
-
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <br>
-
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        <br>
-    </div>
 
     <!-- JQuery link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
